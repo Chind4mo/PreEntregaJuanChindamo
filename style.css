@@ -25,6 +25,7 @@ a {
 
 ul {
     list-style-type: none;
+
 }
 
 p {
@@ -37,7 +38,7 @@ body {
 }
 
 .header {
-    background-color: #24448d;
+    background-color: #394867;
     padding: 30px 20px;
 }
 
@@ -55,17 +56,26 @@ body {
 
 .header__container-navbar {
     display: none;
+    height: 50px;
+    text-align: center;
 }
 
 .carrousel {
-    background-color: rgb(22, 12, 158);
+    background-color: #212A3E;
     padding: 50px 50px;
     color: #ffffff;
+    display: grid;
 }
 
+img {
+    height: 400px;
+    display: flex;
+}
 
-/* MEDIA QUERIES */
-/* estrategia "mobile first": breakpoints ordenados de manor a mayor */
+footer {
+    background-color: #9BA4B5;
+}
+
 @media (min-width: 768px) {
     .header__container-navbar {
         display: flex;
@@ -89,6 +99,7 @@ body {
     }
 }
 
+
 @media (min-width: 992px) {
     .hero__container {
         grid-template-columns: repeat(2, 1fr);
@@ -97,5 +108,11 @@ body {
 
     .courses__cards {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        font-size: 15px;
     }
 }
