@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    /* https://developer.mozilla.org/es/docs/Web/CSS/box-sizing */
+    box-sizing: border-box;
+
+}
+
+.header-nav {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 50px;
+}
+
+.header__container-navbar {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Lato';
+    background-color: #eee;
+}
+
+.header {
+    background-color: #24448d;
+    padding: 30px 20px;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container h3 a {
+    color: #ffffff;
+}
+
+.header__container-navbar {
+    display: none;
+}
+
+.carrousel {
+    background-color: rgb(22, 12, 158);
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+
+/* MEDIA QUERIES */
+/* estrategia "mobile first": breakpoints ordenados de manor a mayor */
+@media (min-width: 768px) {
+    .header__container-navbar {
+        display: flex;
+    }
+
+    .header__container-navbar li {
+        margin: 0 15px;
+    }
+    
+    .header__container-navbar li a {
+        color: #e2e8f0;
+        font-weight: bold;
+    }
+
+    .header__container-navbar-mobile {
+        display: none;
+    }
+
+    .courses__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .hero__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .courses__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
