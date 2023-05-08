@@ -6,8 +6,8 @@
     margin: 0;
     padding: 0;
     /* https://developer.mozilla.org/es/docs/Web/CSS/box-sizing */
-    box-sizing: border-box; 
-}   
+    box-sizing: border-box;
+}
 
 
 .header-nav {
@@ -62,10 +62,10 @@ body {
 
 /* CAROUSEL */
 
-.cBox { 
+.cBox {
     padding: 48px;
     background-color: #0d2033;
-}     
+}
 
 /* FOOTER */
 
@@ -76,41 +76,46 @@ footer {
 
 /* PIE DE PAGINA */
 
-.pie-pagina{
+.pie-pagina {
     width: 100%;
     background-color: #0a141d;
 }
 
-.pie-pagina .grupo-1{
+.pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
+    grid-gap: 50px;
     padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+
+.pie-pagina .grupo-1 .box figure {
     width: 150px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
+
+.pie-pagina .grupo-1 .box figure img {
     width: 50px;
     height: 50px;
 }
-.pie-pagina .grupo-1 .box h2{
+
+.pie-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+
+.pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+.pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -122,29 +127,20 @@ footer {
     text-align: center;
     transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+
+.pie-pagina .grupo-1 .red-social a:hover {
     color: aqua;
 }
-.pie-pagina .grupo-2{
+
+.pie-pagina .grupo-2 {
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
-.pie-pagina .grupo-2 small{
+
+.pie-pagina .grupo-2 small {
     font-size: 15px;
-}
-
-
-
-.mourullo-nosotros {
-    font-family: 'Bruno Ace', cursive;
-    font-size: 100px;
-    text-align: center;
-}
-
-.mourullo-nosotros2 {
-    margin-top: 5;
 }
 
 /* TARJETAS */
@@ -188,7 +184,6 @@ footer {
     border-radius: 10px;
     margin-bottom: 20px;
     object-fit: cover;
-    /* https://developer.mozilla.org/es/docs/web/css/object-fit */
 }
 
 .card__title {
@@ -225,16 +220,14 @@ footer {
 }
 
 form {
-   /* centrar el formulario */
-   margin-left: 30px;
-   width: 400px;
-   /* esquema del formulario */
-   padding: 1em;
-   border: 1px solid #CCC;
-   border-radius: 1em;
-   color: #ffffff;
-   font-family: 'Roboto', 'San Serif';
-   background-color: #0a1a2a;
+    margin-left: 30px;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    color: #ffffff;
+    font-family: 'Roboto', 'San Serif';
+    background-color: #0a1a2a;
 }
 
 form ul {
@@ -244,7 +237,6 @@ form ul {
 }
 
 label {
-    /* tamaño y alineacion */
     display: inline-block;
     width: 90px;
     text-align: right;
@@ -267,7 +259,55 @@ h2 {
     padding: 50px;
 }
 
+/* NOSOTROS */
 
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+
+.header-nosotros {
+    margin: 0;
+    color: #333;
+    text-align: center;
+    padding: 2.5em 2em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-nosotros h1 {
+    margin: 0.2em 0;
+    font-size: 3em;
+    font-weight: 300;
+    font-family: 'Bruno Ace', cursive;
+}
+
+.header-nosotros h2 {
+    font-weight: 300;
+    color: #888;
+    padding: 0;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-subhead {
+    margin: 50px 0 20px 0;
+    font-weight: 300;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+@media (min-width: 48em) {
+
+    .header-nosotros,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
 
 @media (min-width: 768px) {
     .header__container-navbar {
@@ -277,7 +317,7 @@ h2 {
     .header__container-navbar li {
         margin: 0 15px;
     }
-    
+
     .header__container-navbar li a {
         color: #e2e8f0;
         font-weight: bold;
@@ -310,11 +350,16 @@ h2 {
     }
 }
 
-@media screen and (max-width:768px){
-    .pie-pagina .grupo-1{
+@media screen and (max-width:768px) {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
 }
