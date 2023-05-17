@@ -32,7 +32,6 @@ p {
 
 body {
     font-family: 'Lato';
-    background-color: #eee;
 }
 
 .header {
@@ -67,8 +66,6 @@ footer {
     background-color: #9BA4B5;
     text-align: center;
 }
-
-/* PIE DE PAGINA */
 
 .pie-pagina {
     width: 100%;

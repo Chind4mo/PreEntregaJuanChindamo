@@ -1,3 +1,8 @@
+.cBox {
+  padding: 48px;
+  background-color: #0d2033;
+}
+
 body {
   height: 100%;
   font-family: "Noto Sans", sans-serif;
