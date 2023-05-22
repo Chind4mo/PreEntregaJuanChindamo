@@ -3,6 +3,60 @@
   background-color: #0d2033;
 }
 
+.courses {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.productosindex {
+  background-color: #0d2033;
+  padding: 35px;
+}
+.productosindex .courses__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.productosindex .courses__cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+.productosindex .courses__cards .card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.productosindex .courses__cards .card .card__header img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.productosindex .courses__cards .card__tittle {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.productosindex .courses__cards .card__description {
+  margin-bottom: 40px;
+}
+.productosindex .courses__cards .card__link {
+  background-color: #0f7d9e;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 0;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
 body {
   height: 100%;
   font-family: "Noto Sans", sans-serif;
@@ -113,6 +167,42 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid #0f7d9e;
+}
+
+.header-nosotros {
+  margin: 0;
+  color: #333;
+  text-align: center;
+  padding: 2.5em 2em 0;
+  border-bottom: 1px solid #eee;
+}
+.header-nosotros h1 {
+  margin: 0.2em 0;
+  font-size: 3em;
+  font-weight: 300;
+  font-family: "Bruno Ace", cursive;
+}
+.header-nosotros h2 {
+  font-weight: 300;
+  color: #888;
+  padding: 0;
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 2em;
+  max-width: 800px;
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+.content-subhead {
+  margin: 50px 0 20px 0;
+  font-weight: 300;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

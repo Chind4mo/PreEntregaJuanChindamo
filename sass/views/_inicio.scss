@@ -2,3 +2,69 @@
     padding: 48px;
     background-color: #0d2033;
 }
+
+.courses {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.productosindex {
+    background-color: #0d2033;
+    padding: 35px;
+
+    .courses__title {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 30px;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+
+    .courses__cards {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+
+            .card__header img {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                object-fit: cover;
+            }
+
+            &__tittle {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+
+            &__description {
+                margin-bottom: 40px;
+            }
+
+            &__link {
+                background-color: #0f7d9e;
+                color: #fff;
+                font-weight: bold;
+                padding: 15px 0;
+                border-radius: 10px;
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+
+    }
+
+
+
+
+}
