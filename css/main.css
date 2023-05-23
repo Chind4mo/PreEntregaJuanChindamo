@@ -1,11 +1,9 @@
+/** MEDIDAS **/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Source+Sans+Pro:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@1,200&display=swap");
 .cBox {
   padding: 48px;
   background-color: #0d2033;
-}
-
-.courses {
-  margin-top: 60px;
-  padding: 0 20px;
 }
 
 .productosindex {
@@ -17,7 +15,7 @@
   text-align: center;
   font-size: 30px;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Bruno Ace", cursive;
   font-weight: bold;
 }
 .productosindex .courses__cards {
@@ -57,6 +55,129 @@
   text-align: center;
 }
 
+body {
+  font-family: "Lato";
+}
+
+header {
+  background-color: #394867;
+  padding: 30px 20px;
+}
+header .navbar-brand {
+  font-family: "Bruno Ace", cursive;
+  font-size: 50px;
+}
+header #navbarNav {
+  justify-content: end;
+}
+header .nav-item {
+  font-size: 20px;
+}
+
+footer {
+  background-color: #9BA4B5;
+  text-align: center;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 50px;
+  height: 50px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 .small {
+  font-size: 15px;
+}
+
+@media (min-width: 48em) {
+  .content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .productosindex .courses__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .productosindex .courses__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .productosindex .courses__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    font-size: 15px;
+  }
+  .header__container-navbar {
+    display: flex;
+  }
+  .header__container-navbar li {
+    margin: 0 15px;
+  }
+  .header__container-navbar li a {
+    color: #e2e8f0;
+    font-weight: bold;
+  }
+  .header__container-navbar-mobile {
+    display: none;
+  }
+}
 body {
   height: 100%;
   font-family: "Noto Sans", sans-serif;
@@ -169,6 +290,13 @@ p {
   border: 1px solid #0f7d9e;
 }
 
+/* MAPS */
+.maps-mapa {
+  display: grid;
+  margin: 0 auto;
+  border-bottom: 10px;
+}
+
 .header-nosotros {
   margin: 0;
   color: #333;
@@ -203,6 +331,35 @@ p {
   color: #000000;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+}
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card img {
+  align-content: center;
+}
+
+.row {
+  justify-content: center;
+  background-color: #0d2033;
+}
+.row .col-sm-5 {
+  background-color: #132e49;
+}
+.row .col-sm-5 .card .body .text-center {
+  background-color: #0d2033;
+  border-radius: 10px;
+}
+.row .col-sm-5 .card .body .text-center a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

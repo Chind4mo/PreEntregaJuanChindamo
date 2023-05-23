@@ -1,0 +1,32 @@
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    img {
+        align-content: center;
+    }
+}
+
+.row {
+    justify-content: center;
+    background-color: $Bodycolor;
+
+    .col-sm-5 {
+        background-color: #132e49;
+
+        .card {
+            .body {
+                .text-center {
+                    background-color: $Bodycolor;
+                    border-radius: 10px;
+
+                    a {
+                        color: #ffff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

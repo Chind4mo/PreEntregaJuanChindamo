@@ -1,7 +1,7 @@
 {
   "name": "preentrega2-chindamo",
   "version": "1.0.0",
-  "description": "Agregado de archivo readme **:$**",
+  "description": "Esta es una Empresa de fabricacion de telgopor",
   "main": "index.js",
   "scripts": {
     "build-sass": "sass ./sass/main.scss ./css/main.css -w"

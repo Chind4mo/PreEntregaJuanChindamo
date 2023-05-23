@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
 body {
     font-family: 'Lato';
 }
@@ -11,7 +13,6 @@ header {
     .navbar-brand {
         font-family: 'Bruno Ace', cursive;
         font-size: 50px;
-        font-size: 50px !important;
     }
 
     #navbarNav {
@@ -21,6 +22,7 @@ header {
     .nav-item {
         font-size: 20px;
     }
+
 }
 
 // FOOTER
@@ -43,7 +45,7 @@ footer {
         grid-gap: 50px;
         padding: 45px 0px;
 
-        &box {
+        .box {
 
             figure {
 
@@ -102,4 +104,71 @@ footer {
             font-size: 15px;
         }
     }
+}
+
+//*QUERYS*//
+
+@media (min-width: $Smallquery) {
+
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .productosindex {
+        .courses__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (min-width: $Largequery) {
+
+    .productosindex {
+        .courses__cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: $Mediumquery) {
+    .pie-pagina {
+        .grupo-1 {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
+
+    }
+
+    .productosindex {
+        .courses__cards {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    
+    .header {
+        font-size: 15px;
+    }
+
+    .header__container-navbar {
+        display: flex;
+    }
+
+    .header__container-navbar li {
+        margin: 0 15px;
+    }
+
+    .header__container-navbar li a {
+        color: #e2e8f0;
+        font-weight: bold;
+    }
+
+    .header__container-navbar-mobile {
+        display: none;
+    }
+    
+
 }

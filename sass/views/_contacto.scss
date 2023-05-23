@@ -12,13 +12,13 @@ body {
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: #fbfbfb;
+    background-color: $Semiwhitecolor;
     padding-left: 30px;
 }
 
 
 input {
-    background-color: #fbfbfb;
+    background-color: $Semiwhitecolor;
     width: 408px;
     height: 40px;
     border-radius: 5px;
@@ -32,7 +32,7 @@ input {
 
 
 textarea {
-    background-color: #fbfbfb;
+    background-color: $Semiwhitecolor;
     width: 405px;
     height: 150px;
     border-radius: 5px;
@@ -124,4 +124,12 @@ p {
         outline: 0;
         border: 1px solid $Footercolor  ;
     }
+}
+
+/* MAPS */ 
+
+.maps-mapa {
+    display: grid;
+    margin: 0 auto;
+    border-bottom: 10px;
 }
