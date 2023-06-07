@@ -5,16 +5,123 @@ body {
   font-family: "Lato";
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
 }
 
+.cBox {
+  padding: 48px;
+  background-color: #0d2033;
+}
+
+.productosindex {
+  background-color: #0d2033;
+  padding: 35px;
+}
+.productosindex .courses__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Bruno Ace", cursive;
+  font-weight: bold;
+}
+.productosindex .courses__cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+.productosindex .courses__cards .card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.productosindex .courses__cards .card .card__header img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.productosindex .courses__cards .card__tittle {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.productosindex .courses__cards .card__description {
+  margin-bottom: 40px;
+}
+.productosindex .courses__cards .card__link {
+  background-color: #0f7d9e;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 0;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+header {
+  background-color: #394867;
+  padding: 30px 20px;
+}
+header .navbar-brand {
+  font-family: "Bruno Ace", cursive;
+  font-size: 50px;
+}
+header #navbarNav {
+  justify-content: end;
+}
+header .nav-item {
+  font-size: 20px;
+}
+
+@media (min-width: 576px) {
+  .content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .productosindex .courses__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .productosindex .courses__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .productosindex .courses__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    font-size: 10px;
+  }
+  .header .navbar-brand {
+    box-sizing: border-box;
+  }
+  .header__container-navbar {
+    display: flex;
+  }
+  .header__container-navbar li {
+    margin: 0 15px;
+  }
+  .header__container-navbar li a {
+    color: #e2e8f0;
+    font-weight: bold;
+  }
+  .header__container-navbar-mobile {
+    display: none;
+  }
+}
 footer {
   background-color: #9BA4B5;
   text-align: center;
@@ -166,119 +273,6 @@ footer {
     display: none;
   }
 }
-header {
-  background-color: #394867;
-  padding: 30px 20px;
-}
-header .navbar-brand {
-  font-family: "Bruno Ace", cursive;
-  font-size: 50px;
-}
-header #navbarNav {
-  justify-content: end;
-}
-header .nav-item {
-  font-size: 20px;
-}
-
-@media (min-width: 576px) {
-  .content {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-  .productosindex .courses__cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 992px) {
-  .productosindex .courses__cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 768px) {
-  .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-  }
-  .productosindex .courses__cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .header {
-    font-size: 10px;
-  }
-  .header .navbar-brand {
-    box-sizing: border-box;
-  }
-  .header__container-navbar {
-    display: flex;
-  }
-  .header__container-navbar li {
-    margin: 0 15px;
-  }
-  .header__container-navbar li a {
-    color: #e2e8f0;
-    font-weight: bold;
-  }
-  .header__container-navbar-mobile {
-    display: none;
-  }
-}
-.cBox {
-  padding: 48px;
-  background-color: #0d2033;
-}
-
-.productosindex {
-  background-color: #0d2033;
-  padding: 35px;
-}
-.productosindex .courses__title {
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 30px;
-  color: #ffffff;
-  font-family: "Bruno Ace", cursive;
-  font-weight: bold;
-}
-.productosindex .courses__cards {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 50px;
-}
-.productosindex .courses__cards .card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-}
-.productosindex .courses__cards .card .card__header img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  object-fit: cover;
-}
-.productosindex .courses__cards .card__tittle {
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-.productosindex .courses__cards .card__description {
-  margin-bottom: 40px;
-}
-.productosindex .courses__cards .card__link {
-  background-color: #0f7d9e;
-  color: #fff;
-  font-weight: bold;
-  padding: 15px 0;
-  border-radius: 10px;
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-
 body {
   height: 100%;
   font-family: "Noto Sans", sans-serif;

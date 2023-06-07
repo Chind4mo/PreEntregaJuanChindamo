@@ -1,13 +1,9 @@
 // Utils
 @import './utils/variables';
 @import './utils/global';
-
-// Components
-@import './components/footer';
-@import './components/header';
-
-// Pages
 @import './views/inicio';
+@import './components/header';
+@import './components/footer';
 @import './views/contacto';
 @import './views/nosotros';
 @import './views/pedidos';
