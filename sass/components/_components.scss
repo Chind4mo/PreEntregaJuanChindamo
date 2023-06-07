@@ -150,7 +150,11 @@ footer {
 
     
     .header {
-        font-size: 15px;
+        font-size: 10px;
+
+        .navbar-brand {
+            box-sizing: border-box;
+        }
     }
 
     .header__container-navbar {
