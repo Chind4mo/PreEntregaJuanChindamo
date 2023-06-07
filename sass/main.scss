@@ -3,9 +3,11 @@
 @import './utils/global';
 
 // Components
+@import './components/footer';
+@import './components/header';
 
+// Pages
 @import './views/inicio';
-@import './components/components';
 @import './views/contacto';
 @import './views/nosotros';
 @import './views/pedidos';
