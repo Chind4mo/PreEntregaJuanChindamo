@@ -61,8 +61,8 @@ header {
     .header {
         font-size: 10px;
 
-        .navbar-brand {
-            box-sizing: border-box;
+        a {
+            justify-items: center;
         }
     }
 
