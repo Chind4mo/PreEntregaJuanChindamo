@@ -1,19 +1,26 @@
 body {
     height: 100%;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;   
+}
+
+.forms {
     background-color: $Bodycolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
 .contact_form {
     width: 460px;
     height: auto;
-    margin: 80px auto;
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
     background-color: $Semiwhitecolor;
     padding-left: 30px;
+    margin: 30px;
 }
 
 
